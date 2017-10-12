@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInitb2d0eeab114673625147303d572f5c73
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
@@ -18,7 +17,6 @@ class ComposerStaticInitb2d0eeab114673625147303d572f5c73
         ),
         'S' => 
         array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Slim\\Views\\' => 11,
             'Slim\\' => 5,
         ),
@@ -45,10 +43,6 @@ class ComposerStaticInitb2d0eeab114673625147303d572f5c73
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
-        ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
         'Slim\\Views\\' => 
         array (

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      #app {
+        width: 100%;
+      }
+      #app input.form-control {
+        width: 300px;
+      }
+      #app .error {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="app">
+        <h1>Some fancy stuffs goes here</h1>
+        <hr>
+        <div class="well">
+          <form class="form-inline">
+            <div class="form-group">
+              <input v-model="inputUrl" class="form-control" placeholder="Enter url">
+            </div>
+            <button @click.prevent="goShorten" class="btn btn-primary">Submit</button>
+          </form>
+          <span class="error" v-if="errorMsg">${ errorMsg }</span>
+          <span v-if="shortenUrl">Shorten URL: ${ shortenUrl }</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      var app = new Vue({
+        delimiters: ['${', '}'],
+        el: '#app',
+        data: {
+          shortenUrl: null,
+          inputUrl: null,
+          errorMsg: null,
+          abc: 'hey',
+        },
+        methods: {
+          goShorten() {
+            axios.post("{{ path_for('home.shorten') }}", {
+              url: this.inputUrl
+            })
+            .then(function(res) {
+              if (res.data.error) {
+                this.errorMsg = res.data.error;
+                this.shortenUrl = null;
+              } else {
+                this.errorMsg = null;
+                this.shortenUrl = res.data.shortenedUrl;
+              }
+            }.bind(this));
+          },
+        }
+      });
+    </script>
+  </body>
+</html>

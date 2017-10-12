@@ -1,0 +1,22 @@
+{
+    "1": {
+        "url": "http:\/\/ghdfghdfgh",
+        "shortenedUrl": "http:\/\/localhost:8080\/url-shortener\/public\/very\/short\/domain\/c"
+    },
+    "2": {
+        "url": "http:\/\/www.facebook.com",
+        "shortenedUrl": "http:\/\/localhost:8080\/url-shortener\/public\/very\/short\/domain\/d"
+    },
+    "3": {
+        "url": "http:\/\/www.google.com",
+        "shortenedUrl": "http:\/\/localhost:8080\/url-shortener\/public\/very\/short\/domain\/f"
+    },
+    "4": {
+        "url": "http:\/\/www.another.com",
+        "shortenedUrl": "http:\/\/localhost:8080\/url-shortener\/public\/very\/short\/domain\/g"
+    },
+    "5": {
+        "url": "http:\/\/something.com",
+        "shortenedUrl": "http:\/\/localhost:8080\/url-shortener\/public\/very\/short\/domain\/h"
+    }
+}
