@@ -14,16 +14,13 @@ Requirements
 PHP Version 5.5.12
 ```
 
-Minimum Browser Version Support 
+### Browser Support
 
-```
-Internet Explorer - 9
-Firefox           - 56
-Chrome            - 61
-Microsoft Edge    - 15
-Safari            - 8
-
-```
+* [Internet Explorer](https://www.microsoft.com/en-in/download/internet-explorer-9-details.aspx) - 9
+* [Firefox](https://www.mozilla.org/en-US/firefox/56.0/releasenotes/) - 56
+* [Chrome](https://www.google.com/chrome/browser/features.html) - 61
+* [Microsoft Edge](https://www.microsoft.com/en-us/download/details.aspx?id=48126) - 15
+* [Safari](https://support.apple.com/en-us/HT204416) - 8
 
 ### Installing
 
